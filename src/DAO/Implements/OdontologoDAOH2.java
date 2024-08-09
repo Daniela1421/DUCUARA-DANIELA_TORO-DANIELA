@@ -1,5 +1,4 @@
-
-
+package DAO.Implements;
 import DAO.Implements.DB;
 import DAO.Implements.IDAO;
 import Modelo.Odontologo;
