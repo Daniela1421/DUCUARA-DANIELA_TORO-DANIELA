@@ -2,6 +2,7 @@ package DAO.Implements;
 import DAO.Implements.DB;
 import DAO.Implements.IDAO;
 import Modelo.Odontologo;
+import org.apache.log4j.Logger;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,8 +10,10 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.log4j.Logger;
 
 public class OdontologoDAOH2 implements IDAO<Odontologo> {
+    private static final Logger LOGGER = Logger.getLogger(OdontologoDAOImplemMemory.class);
 
     @Override
     public Odontologo guardar(Odontologo odontologo) {
@@ -28,15 +31,17 @@ public class OdontologoDAOH2 implements IDAO<Odontologo> {
              preparedStatement.setString(4, odontologo.getApellido());
 
              preparedStatement.execute();
-
+            LOGGER.info("Odontólogo guardado: " + odontologo.getNombre());
             System.out.println("Se guardó el odontólogo con nombre " + odontologo.getNombre());
 
         } catch (Exception e) {
+            LOGGER.error("Error al guardar odontólogo: " + e.getMessage(), e);
             e.printStackTrace();
         } finally {
             try {
                 connection.close();
             } catch (Exception ex) {
+                LOGGER.error("Error al cerrar la conexión: " + ex.getMessage(), ex);
                 ex.printStackTrace();
             }
         }
@@ -62,16 +67,19 @@ public class OdontologoDAOH2 implements IDAO<Odontologo> {
 
                 Odontologo odontologo = new Odontologo(id, matricula, nombre, apellido);
                 odontologos.add(odontologo);
+                LOGGER.info("Odontólogo registrado: " + odontologo.getNombre());
                 System.out.println("Estos son los odontologos que se han registrado " + odontologo.getNombre());
             }
 
 
         } catch (Exception e) {
+            LOGGER.error("Error al listar odontólogos: " + e.getMessage(), e);
             e.printStackTrace();
         } finally {
             try {
                 connection.close();
             } catch (Exception ex) {
+                LOGGER.error("Error al cerrar la conexión: " + ex.getMessage(), ex);
                 ex.printStackTrace();
             }
         }
