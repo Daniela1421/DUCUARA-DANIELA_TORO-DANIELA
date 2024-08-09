@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60c9623f-5d89-4563-9228-8a53d3108aab" name="Changes" comment="Interface created">
-      <change afterPath="$PROJECT_DIR$/src/DAO/Implements/OdontologoDAOH2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Script.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +67,7 @@
       <recent name="Servicio" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OdontologoDAOH2Test">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="DUCUARA-DANIELA_TORO-DANIELA" />
@@ -123,10 +123,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.OdontologoDAOH2Test" />
         <item itemvalue="JUnit.OdontologoDAOImplemMemoryTest" />
         <item itemvalue="JUnit.OdontologoDAOImplemMemoryTest.testListarTodos" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
