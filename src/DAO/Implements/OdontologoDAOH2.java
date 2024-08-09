@@ -63,7 +63,7 @@ public class OdontologoDAOH2 implements IDAO<Odontologo> {
 
                 Odontologo odontologo = new Odontologo(id, matricula, nombre, apellido);
                 odontologos.add(odontologo);
-                System.out.println("Se guardó el odontólogo con nombre " + odontologo);
+                System.out.println("Estos son los odontologos que se han registrado " + odontologo.getNombre());
             }
 
 
