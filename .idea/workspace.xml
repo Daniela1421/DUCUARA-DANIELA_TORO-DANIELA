@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60c9623f-5d89-4563-9228-8a53d3108aab" name="Changes" comment="Add OdontologoDAOImplMemory in main">
-      <change beforePath="$PROJECT_DIR$/src/DAO/Implements/OdontologoDAOImplMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/Implements/OdontologoDAOImplemMemory.java" afterDir="false" />
-    </list>
+    <list default="true" id="60c9623f-5d89-4563-9228-8a53d3108aab" name="Changes" comment="Add OdontologoDAOImplMemory in main" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

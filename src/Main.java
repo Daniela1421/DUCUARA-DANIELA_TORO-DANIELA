@@ -15,7 +15,6 @@ public class Main {
         odontologoServicio.guardar(odontologoH2);
         odontologoServicio.guardar(odontologo1H2);
         odontologoServicio.listarTodos();
-       // odontologoServicio.guardar(odontologo);
 
         IDAO<Odontologo> odontologoDao = new OdontologoDAOImplemMemory();
 
