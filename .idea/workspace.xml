@@ -117,8 +117,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/DAO/Implements/OdontologoDAOH2.java</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/DAO/Implements/OdontologoDAOImplemMemory.java</url>
+          <line>11</line>
+          <properties class="DAO.Implements.OdontologoDAOImplemMemory" method="guardar">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,6 +1,7 @@
 import DAO.Implements.DB;
 import DAO.Implements.IDAO;
 import DAO.Implements.OdontologoDAOImplemMemory;
+import DAO.Implements.OdontologoDAOH2;
 import Modelo.Odontologo;
 import Servicio.OdontologoServicio;
 import java.util.List;
@@ -10,7 +11,7 @@ public class Main {
         DB.createTable();
         Odontologo odontologoH2 = new Odontologo(1, "123", "Cristian", "Dominguez");
         Odontologo odontologo1H2 = new Odontologo(2, "345","David", "Herrera");
-        OdontologoDAOH2 odontologoIDAO = new OdontologoDAOH2();
+        IDAO<Odontologo> odontologoIDAO = new OdontologoDAOH2();
         OdontologoServicio odontologoServicio = new OdontologoServicio(odontologoIDAO);
         odontologoServicio.guardar(odontologoH2);
         odontologoServicio.guardar(odontologo1H2);
