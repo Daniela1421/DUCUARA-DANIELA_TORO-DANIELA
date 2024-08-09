@@ -1,7 +1,9 @@
 import DAO.Implements.DB;
 import DAO.Implements.IDAO;
+import DAO.Implements.OdontologoDAOImplemMemory;
 import Modelo.Odontologo;
 import Servicio.OdontologoServicio;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +13,7 @@ public class Main {
         OdontologoServicio odontologoServicio = new OdontologoServicio(odontologoIDAO);
         odontologoServicio.guardar(odontologo);
 
-        IDAO<Odontologo> odontologoDao = new OdontologoDAOImplMemory();
+        IDAO<Odontologo> odontologoDao = new OdontologoDAOImplemMemory();
 
         Odontologo odontologo1 = new Odontologo(1, "001", "Juan", "Pérez");
         Odontologo odontologo2 = new Odontologo(2, "002", "Ana", "Gómez");
@@ -22,7 +24,7 @@ public class Main {
         Odontologo encontrado = odontologoDao.buscarPorId(1);
         System.out.println("Odontólogo encontrado: " + encontrado.getNombre() + " " + encontrado.getApellido());
 
-        List<Odontologo> todos = ((OdontologoDAOImplMemory)odontologoDao).listarTodos();
+        List<Odontologo> todos = ((OdontologoDAOImplemMemory)odontologoDao).listarTodos();
         todos.forEach(o -> System.out.println(o.getNombre() + " " + o.getApellido()));
     }
 }

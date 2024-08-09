@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60c9623f-5d89-4563-9228-8a53d3108aab" name="Changes" comment="Persistence using a collection">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="60c9623f-5d89-4563-9228-8a53d3108aab" name="Changes" comment="Add OdontologoDAOImplMemory in main">
+      <change beforePath="$PROJECT_DIR$/src/DAO/Implements/OdontologoDAOImplMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DAO/Implements/OdontologoDAOImplemMemory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,13 +91,22 @@
       <option name="project" value="LOCAL" />
       <updated>1723175897717</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add OdontologoDAOImplMemory in main">
+      <option name="closed" value="true" />
+      <created>1723177016194</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723177016194</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial" />
     <MESSAGE value="Persistence using a collection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Persistence using a collection" />
+    <MESSAGE value="Add OdontologoDAOImplMemory in main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add OdontologoDAOImplMemory in main" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

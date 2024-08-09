@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class OdontologoDAOImplMemory implements IDAO<Odontologo> {
+public class OdontologoDAOImplemMemory implements IDAO<Odontologo> {
     private List<Odontologo> odontologos = new ArrayList<>();
 
     @Override
