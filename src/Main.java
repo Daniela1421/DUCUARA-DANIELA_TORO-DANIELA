@@ -9,5 +9,6 @@ public class Main {
         OdontologoDAOH2 odontologoIDAO = new OdontologoDAOH2();
         OdontologoServicio odontologoServicio = new OdontologoServicio(odontologoIDAO);
         odontologoServicio.guardar(odontologo);
+        odontologoServicio.listarTodos();
     }
 }

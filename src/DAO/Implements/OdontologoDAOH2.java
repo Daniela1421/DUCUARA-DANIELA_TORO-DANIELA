@@ -8,6 +8,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.List;
 
 public class OdontologoDAOH2 implements IDAO<Odontologo> {
@@ -45,6 +46,41 @@ public class OdontologoDAOH2 implements IDAO<Odontologo> {
 
     @Override
     public List<Odontologo> listarTodos() {
+        Connection connection = null;
+        List<Odontologo> odontologos = new ArrayList<>();
+        try {
+            connection = DB.getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(
+                    "SELECT * FROM ODONTOLOGOS");
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String matricula = resultSet.getString("matricula");
+                String nombre = resultSet.getString("nombre");
+                String apellido = resultSet.getString("apellido");
+
+                Odontologo odontologo = new Odontologo(id, matricula, nombre, apellido);
+                odontologos.add(odontologo);
+                System.out.println("Se guardó el odontólogo con nombre " + odontologo);
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                connection.close();
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        }
+        return odontologos;
+    }
+
+    @Override
+    public Odontologo buscarPorId(Integer id) {
         return null;
     }
 }
